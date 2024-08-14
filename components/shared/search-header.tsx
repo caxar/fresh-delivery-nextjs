@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Search, X } from "lucide-react";
+import { useDebounce } from "react-use";
 
 export const SearchHeader = () => {
   const [searchValue, setSearchValue] = React.useState<string>("");
@@ -14,11 +15,14 @@ export const SearchHeader = () => {
     setSearchValue("");
   };
 
-  React.useEffect(() => {
-    console.log(searchValue);
-
-    handleChangeFunction;
-  }, [searchValue]);
+  useDebounce(
+    () => {
+      console.log(searchValue);
+      handleChangeFunction;
+    },
+    350,
+    [searchValue]
+  );
 
   return (
     <div className="bg-[white] flex items-center py-4 pl-[25px] pr-[15px]  gap-[10px] rounded-[10px] w-[300px]">

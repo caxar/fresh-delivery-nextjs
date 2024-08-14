@@ -31,9 +31,9 @@ const data = [
 
 export const Header = () => {
   return (
-    <>
+    <div className="mb-30">
       <Container>
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-4 mb-30">
           {/* левая часть */}
           <div className="flex gap-1 items-center cursor-pointer">
             <svg
@@ -77,6 +77,6 @@ export const Header = () => {
         </div>
       </Container>
       <ScrollHeader />
-    </>
+    </div>
   );
 };

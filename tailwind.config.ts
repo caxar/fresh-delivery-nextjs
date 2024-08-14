@@ -17,6 +17,9 @@ const config = {
         "2xl": "1400px",
       },
     },
+    variants: {
+      extend: { scale: ["focus-within"], animation: ["motion-safe"] },
+    },
     colors: {
       green1: "#102706",
       green2: "#1c8242",
