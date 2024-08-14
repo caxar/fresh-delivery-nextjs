@@ -27,6 +27,7 @@ const config = {
       gray1: "#707070",
       gray2: "#f7f7f7",
       gray3: "#f5f5f5",
+      white: "#ffffff",
     },
     extend: {
       colors: {
