@@ -7,6 +7,7 @@ import { nanoid } from "nanoid";
 import { ScrollHeaderGroup } from "../header/scroll-header-group";
 
 import "./Header.scss";
+import { cn } from "@/lib/utils";
 
 const data = [
   {
@@ -44,14 +45,20 @@ export const ScrollHeader = () => {
 
   return (
     <div
-      className={`fixed w-full z-10 ${
+      className={cn(
+        `fixed w-full z-10`,
         scrollHeading
           ? "top-0 left-0 width-full animate-animation-scrollheader"
           : ""
-      }`}
+      )}
     >
       <Container>
-        <div className=" flex items-center justify-between mt-3 bg-gray3 rounded-xl py-3 px-8">
+        <div
+          className={cn(
+            "flex items-center justify-between mt-3 bg-gray3 rounded-xl py-3 px-8",
+            scrollHeading ? "shadow-headerShadow" : ""
+          )}
+        >
           {/* левая часть */}
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-5">

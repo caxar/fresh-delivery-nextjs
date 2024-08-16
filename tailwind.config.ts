@@ -79,6 +79,7 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        // анимация для fixed header при скролле
         scrollingHeader: {
           "0%": {
             transform: "translateY(-80px)",
@@ -87,6 +88,7 @@ const config = {
             transform: "translateY(0px)",
           },
         },
+        // анимация появления меню по кнопке каталог в header
         fadeGroupHeaderMEnu: {
           "0%": {
             opacity: "0",
@@ -101,6 +103,9 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "animation-scrollheader": "scrollingHeader 0.3s ease forwards",
         "animation-groupMenu": "fadeGroupHeaderMEnu 0.2s ease-in-out",
+      },
+      boxShadow: {
+        headerShadow: "rgba(6, 5, 50, 0.1) 0px 4px 30px",
       },
     },
   },

@@ -6,10 +6,16 @@ type TitleSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 interface Props {
   size?: TitleSize;
   className?: string;
-  text: string;
+  text?: string;
+  children: any;
 }
 
-export const Title: React.FC<Props> = ({ text, size = "sm", className }) => {
+export const Title: React.FC<Props> = ({
+  text,
+  size = "sm",
+  className,
+  children,
+}) => {
   const mapTagBySize = {
     xs: "h5",
     sm: "h4",
@@ -31,6 +37,6 @@ export const Title: React.FC<Props> = ({ text, size = "sm", className }) => {
   return React.createElement(
     mapTagBySize[size],
     { className: clsx(mapClassNameBySize[size], className) },
-    text
+    children
   );
 };
