@@ -118,7 +118,7 @@ export const ScrollHeader = () => {
             </Link>
             {/* Basket */}
             <Link href="/cart" className="">
-              <div className="group bg-white flex items-center justify-center w-[40px] h-[40px] rounded-xl cursor-pointer">
+              <div className="group bg-white flex items-center justify-center w-[40px] h-[40px] rounded-xl cursor-pointer relative">
                 <svg
                   className="group-hover:scale-110 transition "
                   width="25px"
@@ -155,6 +155,12 @@ export const ScrollHeader = () => {
                     </g>
                   </g>
                 </svg>
+                <div
+                  className="absolute bg-green3 w-[20px] h-[20px] rounded-full top-[-5px] right-[-8px] text-[12px] flex items-center justify-center
+                 text-white"
+                >
+                  15
+                </div>
               </div>
             </Link>
             {/* Account */}

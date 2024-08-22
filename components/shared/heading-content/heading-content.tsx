@@ -1,8 +1,11 @@
+"use-client";
+
 import React from "react";
 import { Container } from "../container";
 import { Button } from "@/components/ui/button";
 import { MoveUpRight } from "lucide-react";
 import { Title } from "../title";
+import Slider from "./slider";
 
 export const HeadingContent = () => {
   return (
@@ -32,7 +35,9 @@ export const HeadingContent = () => {
             </Button>
           </div>
           {/* правая часть */}
-          <div className="bg-green2 rounded-2xl"></div>
+          <div className="flex rounded-2xl h-[500px] relative">
+            <Slider />
+          </div>
         </div>
       </Container>
     </div>
