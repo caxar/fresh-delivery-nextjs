@@ -9,7 +9,7 @@ import Slider from "./slider";
 
 export const HeadingContent = () => {
   return (
-    <div className="">
+    <div className="mb-[60px]">
       <Container>
         <div className="grid grid-cols-2 gap-5 h-[500px]">
           {/* левая часть */}
@@ -24,7 +24,7 @@ export const HeadingContent = () => {
               натуральные и свежие продукты
             </p>
 
-            <Button className="group flex items-center justify-between text-[18px] pl-5 pr-1 bg-green3 rounded-2xl w-[210px] h-[58px] ">
+            <Button className="group flex items-center justify-between text-[18px] px-4 bg-green3 rounded-2xl w-[210px] h-[58px] ">
               Каталог
               <div className="flex items-center justify-center h-[40px] w-[40px] bg-green2 rounded-xl">
                 <MoveUpRight
