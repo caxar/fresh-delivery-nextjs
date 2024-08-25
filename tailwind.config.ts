@@ -107,6 +107,7 @@ const config = {
       boxShadow: {
         headerShadow: "rgba(6, 5, 50, 0.1) 0px 4px 30px",
         cardShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+        scrollBtnShadow: "0 0 0 11px rgb(45, 189, 98, 0.3)",
       },
     },
   },

@@ -12,7 +12,7 @@ import "./Slider.scss";
 
 const Slider = () => {
   return (
-    <div className="bg-gray3 w-full rounded-xl overflow-hidden">
+    <div className="main-slider-block bg-gray3 w-full rounded-xl overflow-hidden">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

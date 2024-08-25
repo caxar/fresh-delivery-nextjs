@@ -70,50 +70,51 @@ $black: #000;
     }
   }
 }
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  padding: 0 !important;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper-pagination {
-  text-align: left;
-  padding-left: 25px;
-  padding-bottom: 20px;
-  &-bullet {
-    background: $green-3;
-    width: 12px;
-    height: 12px;
-    position: relative;
-    &-active {
-      &::after {
-        position: absolute;
-        right: -3px;
-        top: -4px;
-        transform: translateX(5%);
-        content: "";
-        display: block;
-        width: 20px;
-        height: 20px;
-        background: transparent;
-        border: 1px solid $green-3;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-        -webkit-transform: translateX(5%);
-        -moz-transform: translateX(5%);
-        -ms-transform: translateX(5%);
-        -o-transform: translateX(5%);
+.main-slider-block {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-pagination {
+    text-align: left;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    &-bullet {
+      background: $green-3;
+      width: 12px;
+      height: 12px;
+      position: relative;
+      &-active {
+        &::after {
+          position: absolute;
+          right: -3px;
+          top: -4px;
+          transform: translateX(5%);
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: transparent;
+          border: 1px solid $green-3;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+          -webkit-transform: translateX(5%);
+          -moz-transform: translateX(5%);
+          -ms-transform: translateX(5%);
+          -o-transform: translateX(5%);
+        }
       }
     }
   }

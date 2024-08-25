@@ -66,7 +66,7 @@ const ProductGroupList = ({
           </Button>
         </div>
         {/* Карточки товара лайдер*/}
-        <div className="">
+        <div className="group-list-slider">
           <Swiper
             navigation={true}
             modules={[Navigation]}
